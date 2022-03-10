@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Firstcomponent from "./components/firstcomponent";
+import FunctionalComponent from "./components/FunctionalComponent"
+import classcomponent from "./components/classcomponent"
+import CounterClass from "./components/classcomponent";
+import BootstrapComponents from "./components/BootstrapComponents";
 
+import 'bootstrap/dist/css/bootstrap.min.css'
 ReactDOM.render(
   <React.StrictMode>
     <App />
+      <Firstcomponent/>
+      <FunctionalComponent initialCounter={10}/>
+      <CounterClass initialCounter={10}/>
+      <BootstrapComponents/>
   </React.StrictMode>,
   document.getElementById('root')
 );
